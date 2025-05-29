@@ -2,8 +2,8 @@
 
 import subprocess
 
-def insecure(): # insecure 함수 정의
+def insecure(): 
 	cmd = input("Enter command: ")
-	subprocess.call(cmd, shell=True) # ⚠️ Command Injection 가능성
+	subprocess.call(cmd, shell=True)
 
-insecure() # insecure 함수 실행
+insecure()
